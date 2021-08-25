@@ -20,7 +20,7 @@
 .squares {
     width: 50vw;
     height: 50vh;
-    border: 1vh solid black;
+    border: .2rem solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,12 +30,28 @@
     /* filter: brightness(1.5); */
 }
 
+.top {
+    border-top: .4rem solid black;
+}
+
+.bot {
+    border-bottom: .4rem solid black;
+}
+
+.left {
+    border-left: .4rem solid black;
+}
+
+.right {
+    border-right: .4rem solid black;
+}
+
 #topLeft {
     background-color: #16c52e;
 }
 
 #topRight {
-    background-color: #fa4c33;
+    background-color: #dd2c11;
 }
 
 #botLeft {
@@ -48,4 +64,5 @@
 
 .squares:hover {
     color: white;
+    filter: brightness(1.5);
 }
