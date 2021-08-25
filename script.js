@@ -1,5 +1,4 @@
 let randomOrderArray = [];
-let randomNum;
 let userInputArray = [];
 
 const squares = [
@@ -12,7 +11,7 @@ const squares = [
 const playButton = document.getElementById("playButton");
 // Función que pasa despues de completar la secuencia
 function addNumToArray() {
-    randomNum = Math.floor(Math.random() * 4) + 1;
+    let randomNum = Math.ceil(Math.random() * 4);
     randomOrderArray.push(randomNum);
     console.log('Order is ' + randomOrderArray)
 }
@@ -35,7 +34,6 @@ function onSquareClick() {
         randomOrderArray = [];
         userInputArray = [];
         addNumToArray();
-        return;
         // Si no perdiste alargar la secuencia y reniciar el orden introducido por el usuario
     } else if (userInputArray.length == randomOrderArray.length) {
         addNumToArray();
