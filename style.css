@@ -27,20 +27,25 @@
     font-size: 3rem;
     font-family: 'Bebas Neue', cursive;
     font-weight: bold;
+    /* filter: brightness(1.5); */
 }
 
 #topLeft {
-    background-color: green;
+    background-color: #16c52e;
 }
 
 #topRight {
-    background-color: red;
+    background-color: #fa4c33;
 }
 
 #botLeft {
-    background-color: yellow;
+    background-color: #edd624;
 }
 
 #botRight {
-    background-color: blue;
+    background-color: #219edf;
+}
+
+.squares:hover {
+    color: white;
 }
