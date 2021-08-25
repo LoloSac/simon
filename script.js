@@ -13,7 +13,7 @@ const playButton = document.getElementById("playButton");
 function addNumToArray() {
     let randomNum = Math.ceil(Math.random() * 4);
     randomOrderArray.push(randomNum);
-    console.log('Order is ' + randomOrderArray)
+    alert('Order is ' + randomOrderArray)
 }
 
 // Función que se fija que los dos arrays sean iguales 
@@ -30,7 +30,7 @@ function checkArrayEquality() {
 function onSquareClick() {
     // Reinciar si perdiste
     if (!checkArrayEquality()) {
-        console.log('You lost!!');
+        alert('You lost!!');
         randomOrderArray = [];
         userInputArray = [];
         addNumToArray();
