@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Mitades */
+
+#background {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Cuadrados */
+
+.squares {
+    width: 49vw;
+    height: 50vh;
+    border: solid 1vh black;
+}
+
+#topLeft {
+    background-color: green;
+}
+
+#topRight {
+    background-color: red;
+}
+
+#botLeft {
+    background-color: yellow;
+}
+
+#botRight {
+    background-color: blue;
+}
