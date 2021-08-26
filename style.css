@@ -3,19 +3,7 @@
         filter: brightness(1);
     }
     50% {
-        filter: brightness(1.5);
-    }
-    100% {
-        filter: brightness(1);
-    }
-}
-
-@keyframes onClick {
-    0% {
-        filter: brightness(1);
-    }
-    50% {
-        filter: brightness(0.75);
+        filter: brightness(1.75);
     }
     100% {
         filter: brightness(1);

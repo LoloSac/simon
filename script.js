@@ -46,12 +46,12 @@ function doColorSequence() {
     for (let i = 0; i < randomOrderArray.length; i++) {
         setTimeout(() => {
             //Reproducimos animación 
-            squares[randomOrderArray[i] - 1].style.animation = "squares .75s";
+            squares[randomOrderArray[i] - 1].style.animation = "squares .5s";
             //Una vez que termina la animación le ponemos la default de nuevo
             setTimeout(() => {
                 squares[randomOrderArray[i] - 1].style.animation = "idle 0s";
-            }, 750);
-        }, 1000 * (i + 1));
+            }, 500);
+        }, 700 * (i + 1));
     }
 }
 
@@ -62,10 +62,10 @@ function doColorSequence() {
 for (let i = 0; i < squares.length; i++) {
     squares[i].addEventListener('click', function e() {
         userInputArray.push(i + 1);
-        squares[i].style.animation = "squares .5s"
+        squares[i].style.animation = "squares .25s"
         setTimeout(() => {
             squares[i].style.animation = "idle 0s";
-        }, 500);
+        }, 250);
         onSquareClick();
     });
 }
