@@ -29,7 +29,7 @@ function checkArrayEquality() {
 function onSquareClick() {
     // Reinciar si perdiste
     if (!checkArrayEquality()) {
-        alert('You lost!!');
+        alert('You lost, your score was: ' + (randomOrderArray.length - 1));
         randomOrderArray = [];
         userInputArray = [];
         addNumToArray();
