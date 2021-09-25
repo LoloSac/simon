@@ -11,7 +11,7 @@ const squares = [
 const playButton = document.getElementById("playButton");
 // Función que pasa despues de completar la secuencia
 function addNumToArray() {
-    let randomNum = Math.ceil(Math.random() * 4);
+    let randomNum = Math.floor(Math.random() * 4) + 1;
     randomOrderArray.push(randomNum);
 }
 // Función que se fija que los dos arrays sean iguales
